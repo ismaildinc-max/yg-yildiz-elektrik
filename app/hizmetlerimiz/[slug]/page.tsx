@@ -21,7 +21,7 @@ export default async function HizmetDetayPage({
 
       <YGPageHero
         title={service?.title ?? "Hizmet Detayı"}
-        description={heroDescription}
+        description={heroDescription as string}
         breadcrumbItems={[
           { label: "Anasayfa", href: "/" },
           { label: "Hizmetlerimiz", href: "/hizmetlerimiz" },
