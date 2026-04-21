@@ -21,7 +21,7 @@ export default function YGIntroSection() {
 
           <div className="mt-5 h-[3px] w-16 rounded-full bg-[#f4bf2a]" />
 
-          <p className="mt-6 text-[16px] leading-8 text-[#5a5d66] md:text-[17px]">
+          <p className="pt-3 text-[16px] leading-8 text-[#5a5d66] md:text-[17px]">
             Elektrik taahhüt projelerinde kalite; doğru keşif, doğru malzeme
             seçimi ve doğru uygulama ile başlar. YG Yıldız Elektrik, farklı
             ölçeklerdeki projelerde güvenli ve verimli sonuçları anahtar teslim
