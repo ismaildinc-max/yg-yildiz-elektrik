@@ -23,7 +23,8 @@ if (!service) {
   notFound();
 }
 
-  const heroDescription = service?.description ?? undefined;
+  const heroDescription =
+  "description" in service ? service.description : undefined;
 
   return (
 
