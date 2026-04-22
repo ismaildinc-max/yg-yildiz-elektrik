@@ -1,3 +1,4 @@
+import { notFound } from "next/navigation";
 import YGHeader from "@/components/YGHeader";
 import YGFooter from "@/components/YGFooter";
 import YGPageHero from "@/components/YGPageHero";
