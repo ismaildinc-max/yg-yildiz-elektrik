@@ -24,7 +24,9 @@ if (!service) {
 }
 
   const heroDescription =
-  "description" in service ? service.description : undefined;
+  "description" in service && typeof service.description === "string"
+    ? service.description
+    : undefined;
 
   return (
 
