@@ -5,28 +5,47 @@ import { serviceData } from "@/data/services";
 
 
 export default async function HizmetDetayPage({
-  params,
-}: {
-  params: Promise<{ slug: string }>;
-}) {
-  const { slug } = await params;
 
-  const service = serviceData[slug as keyof typeof serviceData];
-  const heroDescription =
-    service && "description" in service ? service.description : undefined;
+  params,
+
+}: {
+
+  params: { slug: string };
+
+}) {
+
+  const service = Object.values(serviceData).find(
+  (item: any) => item.slug === params.slug
+);
+
+if (!service) {
+  notFound();
+}
+
+  const heroDescription = service?.description ?? undefined;
 
   return (
+
     <main className="bg-white">
+
       <YGHeader />
 
       <YGPageHero
+
         title={service?.title ?? "Hizmet Detayı"}
-        description={heroDescription as any}
+
+        description={heroDescription}
+
         breadcrumbItems={[
+
           { label: "Anasayfa", href: "/" },
+
           { label: "Hizmetlerimiz", href: "/hizmetlerimiz" },
+
           { label: service?.title ?? "Hizmet Detayı" },
+
         ]}
+
       />
 
       <section className="bg-[#f8f8f8] px-4 py-16 md:px-8 md:py-24 lg:px-10 xl:px-12 2xl:px-6">

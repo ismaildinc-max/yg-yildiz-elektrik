@@ -87,9 +87,9 @@ export default function YGHeader() {
             Blog
           </a>
 
-          <a href="#" className="transition hover:text-white">
+           <Link href="/iletisim" className="transition hover:text-white">
             İletişim
-          </a>
+          </Link>
         </nav>
 
         <div className="flex items-center gap-3">
