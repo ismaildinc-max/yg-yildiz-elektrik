@@ -107,20 +107,19 @@ export default async function BlogDetayPage({
                           ))}
                         </div>
 
-                        {section.bullets && (
-                          <ul className="mt-7 grid gap-3 sm:grid-cols-2">
-                            {section.bullets.map((item, itemIndex) => (
-                              <li
-                                key={itemIndex}
-                                className="flex gap-3 rounded-2xl border border-[#eeeeee] bg-[#fbfbfb] px-4 py-3 text-[14px] leading-6 text-[#4f5561]"
-                              >
-                                <span className="mt-[7px] h-2 w-2 shrink-0 rounded-full bg-[#f4bf2a]" />
-                                <span>{item}</span>
-                              </li>
-                            ))}
-                          </ul>
-                        )}
-
+                        {"bullets" in section && section.bullets && (
+  <ul className="mt-7 grid gap-3 sm:grid-cols-2">
+    {section.bullets.map((item, itemIndex) => (
+      <li
+        key={itemIndex}
+        className="flex gap-3 rounded-2xl border border-[#eeeeee] bg-[#fbfbfb] px-4 py-3 text-[14px] leading-6 text-[#4f5561]"
+      >
+        <span className="mt-[7px] h-2 w-2 shrink-0 rounded-full bg-[#f4bf2a]" />
+        <span>{item}</span>
+      </li>
+    ))}
+  </ul>
+)}
                         {"note" in section && section.note && (
                           <div className="mt-7 rounded-2xl bg-[#2f323c] px-5 py-4">
                             <p className="text-[14px] leading-7 text-white/78 md:text-[15px]">

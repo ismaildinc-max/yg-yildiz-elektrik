@@ -83,9 +83,10 @@ export default function YGHeader() {
             Referanslar
           </a>
 
-          <a href="#" className="transition hover:text-white">
-            Blog
-          </a>
+          <Link
+              href="/blog" className="inline-flex items-center transition hover:text-white">
+              Blog
+            </Link>
 
            <Link href="/iletisim" className="transition hover:text-white">
             İletişim
