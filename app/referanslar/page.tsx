@@ -15,8 +15,6 @@ import {
   Truck,
   Wrench,
   Zap,
-  fuel,
-  activity,
   Activity,
 } from "lucide-react";
 
