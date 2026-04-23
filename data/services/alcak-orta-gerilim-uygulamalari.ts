@@ -1,4 +1,5 @@
 export const alcakOrtaGerilimUygulamalari = {
+  slug: "alcak-orta-gerilim-uygulamalari",
   title: "Alçak Gerilim ve Orta Gerilim Sistemleri",
  
   sections: [

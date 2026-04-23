@@ -4,52 +4,38 @@ import YGFooter from "@/components/YGFooter";
 import YGPageHero from "@/components/YGPageHero";
 import { serviceData } from "@/data/services";
 
-
 export default async function HizmetDetayPage({
-
   params,
-
 }: {
-
-  params: { slug: string };
-
+  params: Promise<{ slug: string }>;
 }) {
+  const { slug } = await params;
 
   const service = Object.values(serviceData).find(
-  (item: any) => item.slug === params.slug
-);
+    (item: any) => item.slug === slug
+  );
 
-if (!service) {
-  notFound();
-}
+  if (!service) {
+    notFound();
+  }
 
   const heroDescription =
-  "description" in service && typeof service.description === "string"
-    ? service.description
-    : undefined;
+    "description" in service && typeof service.description === "string"
+      ? service.description
+      : undefined;
 
   return (
-
     <main className="bg-white">
-
       <YGHeader />
 
       <YGPageHero
-
-        title={service?.title ?? "Hizmet Detayı"}
-
+        title={service.title ?? "Hizmet Detayı"}
         description={heroDescription}
-
         breadcrumbItems={[
-
           { label: "Anasayfa", href: "/" },
-
           { label: "Hizmetlerimiz", href: "/hizmetlerimiz" },
-
-          { label: service?.title ?? "Hizmet Detayı" },
-
+          { label: service.title ?? "Hizmet Detayı" },
         ]}
-
       />
 
       <section className="bg-[#f8f8f8] px-4 py-16 md:px-8 md:py-24 lg:px-10 xl:px-12 2xl:px-6">
@@ -73,7 +59,7 @@ if (!service) {
             </aside>
 
             <div className="space-y-6">
-              {service?.sections?.map((section, index) => {
+              {service.sections?.map((section, index) => {
                 const sectionNumber = String(index + 1).padStart(2, "0");
 
                 return (
@@ -92,16 +78,14 @@ if (!service) {
                         </h2>
 
                         <div className="mt-5 space-y-4">
-                          {section.paragraphs?.map(
-                            (paragraph, paragraphIndex) => (
-                              <p
-                                key={paragraphIndex}
-                                className="text-[15px] leading-7 text-[#5b616e] md:text-[16px]"
-                              >
-                                {paragraph}
-                              </p>
-                            )
-                          )}
+                          {section.paragraphs?.map((paragraph, paragraphIndex) => (
+                            <p
+                              key={paragraphIndex}
+                              className="text-[15px] leading-7 text-[#5b616e] md:text-[16px]"
+                            >
+                              {paragraph}
+                            </p>
+                          ))}
                         </div>
 
                         {section.bullets && (

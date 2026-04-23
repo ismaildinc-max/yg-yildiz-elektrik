@@ -1,4 +1,5 @@
 export const insaatElektrikTaahhut = {
+  slug: "insaat-elektrik-taahhut",
   title: "İnşaat Taahhüt Hizmetleri",
   sections: [
     {

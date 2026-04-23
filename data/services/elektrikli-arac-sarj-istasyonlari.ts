@@ -1,4 +1,5 @@
 export const elektrikliAracSarjIstasyonlari = {
+  slug: "elektrikli-arac-sarj-istasyonlari",
   title: "Elektrikli Araç Şarj İstasyonları",
   sections: [
     {

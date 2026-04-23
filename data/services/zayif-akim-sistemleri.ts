@@ -1,4 +1,5 @@
 export const zayifAkimSistemleri = {
+  slug: "zayif-akim-sistemleri",
   title: "Zayıf Akım Sistemleri",
   sections: [
     {

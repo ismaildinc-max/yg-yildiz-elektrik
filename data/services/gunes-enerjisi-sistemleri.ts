@@ -1,4 +1,5 @@
 export const gunesEnerjisiSistemleri = {
+  slug: "gunes-enerjisi-sistemleri",
   title: "Güneş Enerjisi Sistemleri (GES)",
   sections: [
     {
