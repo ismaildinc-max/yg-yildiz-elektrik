@@ -161,7 +161,7 @@ export default function IletisimPage() {
                   Mesajınız
                 </label>
                 <textarea
-                  rows={6}
+                  rows={4}
                   placeholder="Projeniz veya talebiniz hakkında kısa bilgi paylaşın"
                   className="w-full rounded-[18px] border border-[#e6e6e6] bg-[#fafafa] px-4 py-4 text-[15px] text-[#2f323c] outline-none transition focus:border-[#f4bf2a] focus:bg-white"
                 />
