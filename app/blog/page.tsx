@@ -32,11 +32,6 @@ export default function BlogPage() {
                 Uzmanlık alanlarımıza dair içerikler
               </h2>
             </div>
-
-            <p className="hidden max-w-[420px] text-[15px] leading-7 text-[#69707d] lg:block">
-              Elektrik taahhüt, enerji sistemleri ve uygulama süreçlerine dair içerikleri
-              sade ve anlaşılır bir yapıda inceleyebilirsiniz.
-            </p>
           </div>
 
           <div className="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-3">

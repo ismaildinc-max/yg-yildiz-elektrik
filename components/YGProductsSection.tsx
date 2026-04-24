@@ -4,23 +4,23 @@ import { useState } from "react";
 
 const products = [
   {
-    title: "Priz",
-    image: "/images/product-priz.jpg",
+    title: "Aydınlatma Ürünleri",
+    image: "/images/ozcan-aydinlatma-2817-11a-11-li-dekoratif-led-avize.jpeg",
     link: "#",
   },
   {
-    title: "Şartel",
-    image: "/images/product-sartel.jpg",
+    title: "Kablolar",
+    image: "/images/oznur-kablo-nyaf-cok-telli-kablo-kozaydinlatma_800x472.jpeg",
     link: "#",
   },
   {
-    title: "Uzatma Kablosu",
-    image: "/images/product-uzatma.jpg",
+    title: "Şalt ve Tesisat Malzemeleri",
+    image: "/images/salt-urunleri.jpg",
     link: "#",
   },
   {
-    title: "Avize",
-    image: "/images/product-avize.jpg",
+    title: "Zayıf Akım Ürünleri",
+    image: "/images/Zayif-Akim.jpg",
     link: "#",
   },
   {
@@ -90,8 +90,9 @@ export default function YGProductsSection() {
           <div className="flex items-start justify-between gap-6">
             <div>
               <h2 className="text-[38px] font-semibold leading-tight tracking-[-0.03em] text-white md:text-[48px] 2xl:text-[52px]">
-                Ürünlerimiz
+                Ürün Gruplarımız
               </h2>
+            
 
               <div className="mt-4 h-[4px] w-10 rounded-full bg-[#f4bf2a]" />
             </div>

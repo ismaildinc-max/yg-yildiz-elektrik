@@ -94,13 +94,13 @@ export default function YGHeader() {
           </Link>
         </nav>
 
-        <div className="flex items-center gap-3">
-          <a
-            href="#"
-            className="hidden rounded-2xl bg-[#f4a300] px-5 py-3.5 text-[15px] font-semibold text-[#2f2f2f] transition hover:opacity-90 md:inline-flex 2xl:px-7 2xl:py-4"
-          >
-            Randevu Oluştur
-          </a>
+       <div className="flex items-center gap-3">
+  <a
+    href="tel:+905335123232"
+    className="hidden rounded-2xl bg-[#f4a300] px-5 py-3.5 text-[15px] font-semibold text-[#2f2f2f] transition hover:opacity-90 md:inline-flex 2xl:px-7 2xl:py-4"
+  >
+    Hemen Destek Alın
+  </a>
 
           <button
             type="button"
