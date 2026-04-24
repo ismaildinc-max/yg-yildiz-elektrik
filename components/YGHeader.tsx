@@ -79,9 +79,10 @@ export default function YGHeader() {
             </div>
           </div>
 
-          <a href="#" className="transition hover:text-white">
-            Referanslar
-          </a>
+          <Link
+              href="/referanslar" className="inline-flex items-center transition hover:text-white">
+              Referanslar
+            </Link>
 
           <Link
               href="/blog" className="inline-flex items-center transition hover:text-white">
